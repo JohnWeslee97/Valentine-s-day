@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../css/Lovejourney.css';
 import blueedit from "../assets/blueedit.png"
 import pinkimg from "../assets/pinkimg.png"
-import Current from "../assets/Current.png"
+import Ai from "../assets/Ai.png"
 import image from "../assets/image.png"
 import school from "../assets/school.png"
 import { useNavigate } from 'react-router-dom';
@@ -39,7 +39,7 @@ const milestones = [
     title: "Our Present",
     x: 75, y: 75,
     icon: "💍",
-    image: Current,
+    image: Ai,
     message: " namba present days haa pathi sollanum na apo apo nambalay romba sanda podurom,ena keta first mari nambalala meet panna mudiyela olunga pesa mudiyela,adhuvom ellama enga pasam irrucko anga thaana nariya sanda um irruckum,but after marriage namba life long happya irrupom and future la romba sanda poda mattom,because namba ona irrupom la..."
   },
   {
