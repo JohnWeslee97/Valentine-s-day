@@ -13,7 +13,7 @@ import Login from "./Components/Login.jsx";
 import Home from "./Components/Home.jsx";
 import LoveJourney from "./Components/Lovejourney.jsx";
 import Valentine from "./Components/Valentine.jsx";
-import LoveQuiz from "./Components/LoveQuiz.jsx"; // ✅ Fixed name
+import LoveQuiz from "./Components/LoveQuiz.jsx"; 
 import Lastpage from "./Components/Lastpage.jsx";
 
 import "./App.css";
