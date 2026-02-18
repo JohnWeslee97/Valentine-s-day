@@ -1,5 +1,6 @@
+/* eslint-disable react-hooks/purity */
 import React, { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import {  AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "../css/Valentine.css";
 import Couplesdate from "../assets/Couplesdate.gif";

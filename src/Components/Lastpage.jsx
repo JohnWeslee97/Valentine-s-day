@@ -1,8 +1,10 @@
+/* eslint-disable react-hooks/purity */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { motion } from 'framer-motion';
 import '../css/Last.css';
 import man from "../assets/man.gif";
-import pink from "../assets/pink.gif";
+import pink from "../assets/Pink.gif";
 
 const Lastpage = ({stopMusic,playMusic}) => {
 
