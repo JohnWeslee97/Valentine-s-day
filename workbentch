@@ -1,0 +1,18 @@
+import { useState } from "react"; 
+import Login from "./Components/Login.jsx"; 
+import Home from "./Components/Home.jsx"; 
+import "./App.css"; 
+
+function App() { 
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  
+   return (
+     <div className="app"> 
+     
+     {isLoggedIn ? ( <Home /> ) : ( <Login     onLogin={() => setIsLoggedIn(true)} />
+
+     )}
+      </div> );
+   }
+    export default App;

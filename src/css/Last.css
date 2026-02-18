@@ -1,0 +1,90 @@
+/* Container */
+.container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(165deg, #f10065, #360120);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headings */
+.head {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.imgcont img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+footer .pink {
+  width: 350px;
+  height: 40px;
+  
+}
+
+.end {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Heart Style */
+.heart {
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 5px 5px 0 0;
+  z-index: 1;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50%;
+  left: 0;
+}
+
+.heart::after {
+  left: 50%;
+  top: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .head {
+    font-size: 2rem;
+  }
+
+  .imgcont img {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .end {
+    font-size: 1.2rem;
+  }
+}

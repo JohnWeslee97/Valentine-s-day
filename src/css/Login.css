@@ -1,0 +1,58 @@
+.logindev{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(165deg, #f10065, #360120); 
+}
+.footer{
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  
+}
+.bunnyimg{
+    margin-bottom: 40px;
+
+}
+.heading{
+    color: aliceblue;
+}
+
+.login {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: #f0037d;
+  color: rgb(241, 237, 241);
+  border: 1 rgb(233, 7, 45);
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  /* mobile styles here */
+  .login{
+    width: 210px;
+  }
+  .heading{
+    font-size: 25px;
+  }
+}

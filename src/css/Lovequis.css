@@ -1,0 +1,121 @@
+.quiz-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  padding: 20px;
+}
+.backgr{
+   background: linear-gradient(165deg, #f10065, #360120); 
+
+}
+.heading{
+
+ position: absolute;
+ top: 10%;
+ right: 41%;
+  
+}
+
+.quiz-card {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.quiz-card h2 {
+  margin-bottom: 20px;
+  color: #ff4d6d;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  
+}
+.option-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #ffe3ec;   /* Normal state */
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Desktop hover */
+.option-btn:hover {
+  background: #ff4d6d;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* Mobile tap effect */
+.option-btn:active {
+  background: #ff4d6d;
+  color: white;
+  transform: scale(0.98);
+}
+.questions{
+  margin-bottom: 20px;
+
+
+}
+
+.backbutton{
+  margin-top: 10px;
+}
+
+.progress {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.result-section h2 {
+  color: #ff4d6d;
+  font-size: 1em;
+}
+
+.gift {
+  margin-top: 15px;
+  padding: 15px;
+  background: #fff0f3;
+  border-radius: 12px;
+}
+
+.poem {
+  font-style: italic;
+  line-height: 1.6;
+  color: #444;
+  margin-top: 20px;
+  font-size: .8em;
+  margin-bottom: 20px;
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 480px) {
+  .quiz-card {
+    padding: 20px;
+  }
+  .heading{
+
+ position: absolute;
+ top: 10%;
+ right: 20%;
+  
+}
+
+  .option-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+.home {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(165deg, #f10065, #360120);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* Bunny */
+.home-bunny {
+  width: 160px;
+  max-width: 80%;
+  margin: 20px 0;
+}
+
+/* Love note */
+.note {
+  font-size: 1rem;
+  max-width: 320px;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+/* Button */
+.start-btn {
+  background: white;
+  color: #ff3d8b;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 300px;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  /* mobile styles here */
+  .start-btn{
+    width: 210px;
+  }
+  .title{
+    font-size: 20px;
+  }
+}

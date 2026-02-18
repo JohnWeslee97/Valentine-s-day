@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.btn{
+  background-color: #ffffff;
+  color: #000000;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.screen-container {
+  height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(165deg, #f10065, #360120);
+}
+
+.header-area {
+  padding: 20px 0 10px;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 2.8rem;
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-area {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px 30px;
+  box-sizing: border-box;
+}
+
+.map-scaler {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 80%;
+  aspect-ratio: 4 / 5;
+  background-color: #f582a4;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  border: 4px solid #fff;
+}
+
+.map-path-svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.dashed-path {
+  fill: none;
+  stroke: #020100ee;
+  stroke-width: 4px;
+  stroke-dasharray: 10, 10;
+}
+
+/* --- Markers --- */
+.marker-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  cursor: pointer;
+  text-align: center;
+}
+
+.marker-pin {
+  width: 44px;
+  height: 44px;
+  background: #faf6f6;
+  border: 3px solid #ff4757;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.marker-container:hover .marker-pin,
+.marker-container.active .marker-pin {
+  transform: scale(1.2);
+  background: #ff4757;
+}
+
+.marker-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #4a342e;
+  margin-top: 5px;
+  background: rgb(241, 238, 238);
+  padding: 2px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* --- Popup Card --- */
+.popup-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  z-index: 100;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translate(-50%, -45%) scale(0.9); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.popup-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.popup-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-text h3 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+  color: #ff4757;
+}
+
+.popup-text p {
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.close-pill-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 71, 87, 0.3);
+}
+
+.close-pill-btn:hover {
+  opacity: 0.9;
+}
+
+.footer-area {
+  padding: 10px 0 20px;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.8;
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.8rem;
+  }
+}
+
