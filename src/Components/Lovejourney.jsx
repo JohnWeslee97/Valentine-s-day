@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import '../css/Lovejourney.css';
 import blueedit from "../assets/blueedit.png"
 import pinkimg from "../assets/pinkimg.png"
-import nowimg from "../assets/nowimg.png"
+import current from "../assets/current.png"
 import image from "../assets/image.png"
-import schoolimg from "../assets/schoolimg.png"
+import school from "../assets/school.png"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -15,7 +15,7 @@ const milestones = [
     title: "School Days",
     x: 20, y: 15,
     icon: "🎒",
-    image: schoolimg,
+    image: school,
     message: " school days nalay oru happy ana days , epo kuda nanu nanichu packuran nanu first day una meet pannatha , alaga cute ta first bench la ukanthutu irrundha... nanu last bench la irrundha , apo neum nanu thaa christians so suma nanichu patha namba ona commite agiruvom nu , but adhu unmaiya nadackum nu ethir packela , any way idhu oru super ana good memorie"
   },
   {
@@ -39,7 +39,7 @@ const milestones = [
     title: "Our Present",
     x: 75, y: 75,
     icon: "💍",
-    image: nowimg,
+    image: current,
     message: " namba present days haa pathi sollanum na , ethir paratha oru situations namacku And apo apo nambalay romba sanda podurom , ena keta first mari nambalala meet panna mudiyela olunga pesa mudiyela , adhuvom ellama enga pasam irrucko anga thaana nariya sanda um irruckum , ena analum enacku oru nambika irrucku , after marriage namba life long happya irrupom and future la romba sanda poda mattom nu because namba ona irrupom la..."
   },
   {
