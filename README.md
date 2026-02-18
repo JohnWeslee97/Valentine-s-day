@@ -1,49 +1,65 @@
-💖 Valentine’s Day Web App
+💖 Valentine’s Day Interactive Web Application
+📌 Project Overview
 
-A beautiful and interactive Valentine’s Day themed web application built using React + Vite and deployed on Vercel.
+The Valentine’s Day Web Application is a beautifully designed, interactive, and responsive single-page web application built using modern frontend technologies. The project was created as a creative expression combining UI design, animation, interactivity, and frontend engineering principles.
 
-This project includes animated UI elements, playful interactions, and a romantic theme designed for a special surprise 💕
+This application delivers a playful and engaging Valentine-themed experience through animated backgrounds, romantic messages, interactive buttons, and responsive layout design.
 
-🚀 Live Demo
+The project demonstrates real-world deployment, build optimization, Git version control, and hosting using Vercel.
 
-👉 Deployed on Vercel
-(Replace this link with your actual Vercel URL)
+🎯 Project Objectives
 
-🛠️ Built With
+The main objectives of this project were:
 
-⚛️ React
+To build a modern React-based Single Page Application (SPA)
 
-⚡ Vite
+To design an animated and interactive UI
 
-🎨 CSS3
+To practice clean folder structure and modular components
 
-☁️ Vercel (Deployment)
+To deploy a Vite + React application in production
 
-🗂 Git & GitHub
+To handle real-world deployment errors (case sensitivity, routing issues)
 
-✨ Features
+To implement SPA routing rewrite configuration in Vercel
 
-💖 Animated background hearts
+To improve Git and GitHub workflow management
 
-🌙 Dark mode / glow effect
+🧠 Technical Stack
+Frontend Technologies
 
-😆 Playful “No” button interaction
+React (Functional Components)
 
-📱 Fully responsive design
+Vite (Build Tool & Dev Server)
 
-🎀 Smooth UI animations
+JavaScript (ES6+)
 
-💌 Romantic message display
+CSS3 (Custom Styling & Animations)
 
-📂 Project Structure
-my-react-app/
-│
-├── src/
-│   ├── components/
-│   │   └── Valentine.jsx
-│   ├── main.jsx
-│   └── App.jsx
-│
-├── public/
-├── package.json
-└── vercel.json
+React Hooks
+
+Deployment & Dev Tools
+
+Git
+
+GitHub
+
+Vercel
+
+Node.js
+
+npm
+
+🏗️ Architecture Overview
+
+This project follows a Single Page Application (SPA) architecture.
+
+How It Works:
+
+The application loads a single HTML file (index.html).
+
+React dynamically renders UI components inside the root DOM node.
+
+Client-side routing handles navigation.
+
+Vercel rewrites all routes to /index.html using vercel.json.
